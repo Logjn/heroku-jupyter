@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+pgcontents init
 pgcontents init -l $DATABASE_URL --no-prompt
 
 jupyter contrib nbextension install --user
