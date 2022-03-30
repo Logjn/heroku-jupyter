@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+conda activate
+
 pgcontents init -l $DATABASE_URL --no-prompt
 
 jupyter contrib nbextension install --user
 jupyter nbextensions_configurator enable --user
+jupyter console
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
