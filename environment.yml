@@ -22,3 +22,5 @@ dependencies:
     - pgcontents==0.6.0
     - ipyparallel
     - jupyter_contrib_nbextensions
+    - isort
+    - yapf
